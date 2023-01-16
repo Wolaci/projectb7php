@@ -7,12 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <table>
+    <?php 
+        require 'config.php';
+    ?>
+    <table border="0" width="100%">
         <tr>
             <th>Nome</th>
             <th>E-mail</th>
-            <th>Ações</th>
+            <th>Idade</th>
         </tr>
+        <?php
+            $sql = "SELECT * FROM usuarios";
+            $sql = $pdo->query($sql);
+            if($sql->rowCount()>0){
+                foreach($sql->fetchAll() as $usuario){
+                    
+                }
+            }
+        ?>
     </table>
 </body>
 </html>
