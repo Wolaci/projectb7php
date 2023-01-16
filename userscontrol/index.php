@@ -24,7 +24,7 @@
                     echo '<tr>';
                     echo '<td>'.$usuario['nome'].'</td>';
                     echo '<td>'.$usuario['idade'].'</td>';
-                    echo '<td><a href="editar.php?id='.$usuario['id'].'">Editar</a></td>';        
+                    echo '<td><a href="formedit.php?id='.$usuario['id'].'">Editar</a></td>';        
                     echo '<td><a href="excluir.php?id='.$usuario['id'].'">Excluir</a></td>';
                     echo '</tr>';
                 }
