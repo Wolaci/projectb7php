@@ -14,4 +14,21 @@ $contato = new Contato();
         <th>E-MAIL</th>
         <th>AÇÕES</th>
     </tr>
+
+
+    <?php
+        $lista = $contato->getAll();
+        foreach($lista as $item):
+        ?>
+        <tr>
+            <td><?= $item['id'] ?></td>
+            <td><?= $item['nome'] ?></td>
+            <td><?= $item['email'] ?></td>
+            <td>
+                <a href="">[ EDITAR ]</a>
+                <a href="">[ excluir ]</a>
+            </td>
+        </tr>
+        <? endforeach;?>
+    
 </table>
